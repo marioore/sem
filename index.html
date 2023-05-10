@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naslovnica</title>
+    <link rel="stylesheet" href="sem.css" />
+  </head>
+  <!-- Na početnoj stranici se nalaze osnovni podaci o tvrtci ili obrtu, kratki tekst o tvrtci i njena djelatnost. Uz tekst potrebno je dodati i slike. -->
+  <body>
+    <!-- u div se nalazi sve, dajemo mu grid1 da razdjelimo sav sadržaj na 3 djela(header,main,footer)  -->
+    <div class="grid1">
+      <!-- HEADER START -->
+      <header class="grid2 header1">
+        <div class="grid3 srednji-stupac vertikalno-sredina">
+          <h1>Zlatni klas</h1>
+          <nav class="navigacija">
+            <ul class="nav-lista">
+              <!-- current (u CSS dodajemo underline) služi za posebno označavanje trenutne stranice -->
+              <li class="current"><a href="index.html">Naslovnica</a></li>
+              <li><a href="proizvodi_i_usluge.html">Proizvodi</a></li>
+              <li><a href="katalog.html">Katalog</a></li>
+              <li><a href="cjenik.html">Cjenik</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- HEADER END -->
+      <!-- MAIN START -->
+      <main class="grid2">
+        <!-- BANNER START -->
+        <!-- overlay dodajem samo da tekst na banneru bude vidljiviji -->
+        <section class="banner full-width">
+          <div class="overlay">
+            <div>
+              <h2>ZLATNI KLAS</h2>
+              <p>Uz vas od 1970. godine</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                quae deserunt sapiente.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- BANNER END -->
+        <!-- početak preostalog dijela main elementa -->
+        <article class="srednji-stupac">
+          <h2 class="page-title">Povijest tvrtke:</h2>
+          <p>
+            Osnovana 1970. kao mala kvartovska pekara Zlatni Klas je kroz godine
+            povećavala proizvodnju i ponudu ali uvijek je zadržala svoj osnovni
+            princip: svojim vjernim kupcima uvijek ponuditi pekarske proizvode
+            od najsvježijih i najkvalitetnijih sastojaka. <br /><br />
+            Kod nas vam se nikada neće dogoditi da dobijete proizvod od starih
+            sastojaka. Svakog dana dobivamo svježe sastojke iz domaćih OPG-ova.
+            Brašno, povrće, mlijeko, meso, jaja, sve je svježe i domaće.<br /><br />
+            Zadovoljstvo naših kupaca je uvijek na prvom mjestu!
+          </p>
+          <br />
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perspiciatis deserunt vitae ab laudantium eius, modi, alias
+            consectetur officiis similique consequatur explicabo placeat illo
+            accusamus adipisci dolorem obcaecati debitis eum nulla tempora
+            velit? Animi, eius dolore qui, optio eligendi corporis cumque
+            aliquid doloremque magnam amet vero iure unde dignissimos ullam
+            facere sequi, fugit tempora voluptatem sapiente eum impedit. Enim
+            doloremque nam repudiandae ratione excepturi! Accusamus
+            necessitatibus minima assumenda voluptatum quae repellat sed cumque
+            voluptate deleniti explicabo! Possimus, consectetur nulla! Molestias
+            assumenda eos voluptatum eius, tenetur beatae officiis laborum cum!
+            Dolorum perferendis distinctio soluta, nihil eaque quis qui deserunt
+            reprehenderit accusantium voluptatem harum necessitatibus quam
+            molestiae possimus veniam, corporis, deleniti ipsam. Perferendis
+            illum qui quasi eius atque, consequuntur doloremque quaerat enim
+            unde recusandae, quis aliquam voluptas maiores quos excepturi
+            repellendus reprehenderit tempora tenetur non minus accusamus. Dolor
+            similique accusantium voluptas architecto ut mollitia nesciunt
+            excepturi vel, enim sequi porro odit, accusamus dolore neque
+            recusandae cum pariatur qui, eveniet sunt repudiandae nemo et nobis!
+            Deserunt quis ea quas provident aliquam magni vero voluptate.
+            Perspiciatis optio tempore culpa officia amet dolorem sapiente
+            ratione ducimus, nemo nulla deserunt! Architecto qui, dolorum non
+            quaerat odit, reiciendis corrupti maxime debitis ducimus magnam,
+            laudantium et! Totam tempora fugiat quasi reprehenderit quas
+            explicabo, doloribus ut voluptatum facere debitis commodi saepe
+            incidunt cupiditate quo necessitatibus amet molestias officiis vel,
+            dolores ullam delectus quod? Ut vel, illo deserunt eaque unde sunt,
+            aspernatur cumque maxime in quasi sed, ea libero voluptas? Et
+            doloribus ad repellendus ipsa dolor sed adipisci est! Eligendi ullam
+            modi vitae, voluptate omnis, molestias dolore sed quod distinctio
+            nobis architecto adipisci vel placeat ea.<br /><br />
+          </p>
+
+          <h3 class="page-title">Novosti iz Zlatnog Klasa:</h3>
+          <div class="grid3 aspect-3-2">
+            <!-- svaki h3 naslov,paragraf i link je u posebnom article elementu -->
+            <article>
+              <img
+                src="slike/img2.jpg"
+                alt="kruh"
+                width="640px"
+                height="360px"
+              />
+              <h3><p>Super akcija</p></h3>
+              <p>
+                Svakog tjedna tri odabrana proizvoda prodajemo sa 30% popusta.
+                <br />
+                Tri za dva: svaki tjedan za odabrani proizvod dobivate tri
+                komada za svaka dva kupljena.
+              </p>
+            </article>
+            <article>
+              <img
+                src="slike/kisd_baker.jpeg"
+                alt="kruh"
+                width="640px"
+                height="360px"
+              />
+              <h3><p>Popust za obrok za školarce</p></h3>
+              <p>
+                Sva djeca mogu kupiti naše pekarske proizvode po 25% nižim
+                cijenama za vrijeme školskog odmora u prijepodnevnoj i
+                poslijepodnevnoj smjeni.
+              </p>
+            </article>
+            <article>
+              <img
+                src="slike/dices.jpg"
+                alt="sendvic"
+                width="640px"
+                height="360px"
+              />
+              <h3><p>Nagradna igra</p></h3>
+              <p>
+                Čuvajte račune! <br />Svakog petka jedan sretan dobitnik će
+                dobiti poklon bon u vrijednosti 10€. <br />
+                Broj računa pobjednika objavljujemo ovdje. <br />
+                Sretni dobitnik u prošlom tjednu je kupac s računom br.
+                12345678<br /><br /><br /><br />
+              </p>
+            </article>
+          </div>
+        </article>
+      </main>
+      <!-- MAIN END **************************************************************************************************** -->
+      <!-- FOOTER START********************************************************************************************** -->
+      <footer class="footer grid2">
+        <aside class="srednji-stupac grid3">
+          <ul>
+            <li><p>ZLATNI KLAS</p></li>
+            <li><p>ZLATNI KLAS pekarski obrt d.o.o.</p></li>
+            <li><p>Trg Ban Josipa Jelačića 1</p></li>
+            <li><p>10000 Zagreb</p></li>
+          </ul>
+          <ul>
+            <li><p>KONTAKT</p></li>
+            <li><p>tel:01 987654321</p></li>
+            <li><p>email:info@zlatni-klas.hr</p></li>
+          </ul>
+          <ul>
+            <li><p>DODATNE INFORMACIJE:</p></li>
+            <li><p>Načini plaćanja</p></li>
+            <li><p>Reklamacije i prigovori</p></li>
+            <li><p>Pravila privatnosti</p></li>
+          </ul>
+        </aside>
+        <!-- Link povezuje fontawesome library da bi linkovi u nastavku mogli imati simbol pripadajuće stranice(FB,twitter...)  -->
+        <!-- kod stvarne stranice linkovi vode na account tvrtke na media servisima ako ih tvrtka ima -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+
+        <div class="container full-width">
+          <p>Pratite nas na društvenim mrežama:</p>
+          <span
+            ><a href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i></a
+          ></span>
+          <span
+            ><a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i></a
+          ></span>
+          <span
+            ><a href="https://www.youtube.com" target="_blank"
+              ><i class="fab fa-youtube"></i></a
+          ></span>
+          <span
+            ><a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i></a
+          ></span>
+        </div>
+        <p class="copyright full-width">
+          Ovaj web page je izrađen kao seminarski rad za program 'Web dizajner'
+          u učilištu Algebra | Designed by Mario Oreški | copyright &copy; 2023.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

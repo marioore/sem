@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cjenik</title>
+    <link rel="stylesheet" href="sem.css" />
+  </head>
+  <!-- Cjenik MORA biti izrađen kao tablica. Proizvodi koji su u katalogu moraju biti linkovi na stranicu s katalogom. Potrebno je izraditi dodatnu navigaciju prema pojedinim dijelovima stranice i za povratak na vrh stranice -->
+  <body>
+    <!-- u div se nalazi sve, dajemo mu grid1 da razdjelimo sav sadržaj na 3 djela(header,main,footer)  -->
+    <div class="grid1">
+      <header class="grid2 header1">
+        <div class="grid3 srednji-stupac vertikalno-sredina">
+          <h1>Zlatni klas</h1>
+          <nav class="navigacija">
+            <ul class="nav-lista">
+              <!-- current (u CSS dodajemo underline) služi za posebno označavanje trenutne stranice -->
+              <li><a href="index.html">Naslovnica</a></li>
+              <li><a href="proizvodi_i_usluge.html">Proizvodi</a></li>
+              <li><a href="katalog.html">Katalog</a></li>
+              <li class="current"><a href="cjenik.html">Cjenik</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="grid2 cjenik">
+        <div class="srednji-stupac">
+          <nav class="cjenik_izbornik">
+            <li><a href="#kr">Kruh</a></li>
+            <li><a href="#pe">Peciva</a></li>
+            <li><a href="#ko">Kolači</a></li>
+            <li><a href="#se">Sendviči i pizze</a></li>
+            <li><a href="#tk">Torte i kolači</a></li>
+            <li><a href="#op">Ostali proizvodi</a></li>
+          </nav>
+          <table class="cjenik_table">
+            <caption id="kr">
+              Kruh
+            </caption>
+            <tr>
+              <th>Proizvod</th>
+              <th>Cijena</th>
+            </tr>
+            <tr>
+              <td>Bijeli kruh veliki 500g</td>
+              <td>1.5&euro;</td>
+            </tr>
+            <tr>
+              <td>Bijeli kruh mali 250g</td>
+              <td>1&euro;</td>
+            </tr>
+            <tr>
+              <td id="bezglutenski">Kruh bez glutena 500g</td>
+              <td>2&euro;</td>
+            </tr>
+            <tr>
+              <td id="domaci">Domaći kruh 500g</td>
+              <td>3&euro;</td>
+            </tr>
+            <tr>
+              <td id="razeni">Raženi kruh 500g</td>
+              <td>1.2&euro;</td>
+            </tr>
+            <tr>
+              <td>Kukuruzni kruh 500g</td>
+              <td>1.2&euro;</td>
+            </tr>
+            <tr>
+              <td>Kruh sa sjemenkama 500g</td>
+              <td>1.2&euro;</td>
+            </tr>
+            <tr>
+              <td>Polubijeli kruh 500g</td>
+              <td>1.1&euro;</td>
+            </tr>
+            <tr>
+              <td>Crni kruh 500g</td>
+              <td>0.9 &euro;</td>
+            </tr>
+            <tr>
+              <td>Baguette ('francuz') 250g</td>
+              <td>50c</td>
+            </tr>
+          </table>
+          <table class="cjenik_table">
+            <caption id="pe">
+              Peciva
+            </caption>
+            <tr>
+              <th>Proizvod</th>
+              <th>Cijena</th>
+            </tr>
+            <tr>
+              <td>Slani klipić</td>
+              <td>60c</td>
+            </tr>
+            <tr>
+              <td>Puter štangica</td>
+              <td>50c</td>
+            </tr>
+            <tr>
+              <td>Lizika</td>
+              <td>65c</td>
+            </tr>
+            <tr>
+              <td>Croissant</td>
+              <td>53c</td>
+            </tr>
+            <tr>
+              <td id="krafna_m">Krafna s marmeladom</td>
+              <td>45c</td>
+            </tr>
+            <tr>
+              <td>Trokut sa sirom</td>
+              <td>60c</td>
+            </tr>
+            <tr>
+              <td>Kajzerica</td>
+              <td>20c</td>
+            </tr>
+            <tr>
+              <td>Žemlja</td>
+              <td>25c</td>
+            </tr>
+            <tr>
+              <td>Somun 230g</td>
+              <td>71c</td>
+            </tr>
+          </table>
+          <table class="cjenik_table">
+            <caption id="ko">
+              Kolači
+            </caption>
+            <tr>
+              <th>Proizvod</th>
+              <th>Cijena</th>
+            </tr>
+            <tr>
+              <td id="cupavci">Čupavci 250g</td>
+              <td>4&euro;</td>
+            </tr>
+            <tr>
+              <td>Mađarica 500g</td>
+              <td>5&euro;</td>
+            </tr>
+            <tr>
+              <td>Orahnjača 500g</td>
+              <td>3&euro;</td>
+            </tr>
+            <tr>
+              <td>Makovnjača 500g</td>
+              <td>3&euro;</td>
+            </tr>
+            <tr>
+              <td>Domaći kolači 1kg</td>
+              <td>12&euro;</td>
+            </tr>
+            <tr>
+              <td>Medenjaci 500g</td>
+              <td>2.5&euro;</td>
+            </tr>
+            <tr>
+              <td>Štrudla od jabuke 1kg</td>
+              <td>5&euro;</td>
+            </tr>
+          </table>
+          <table class="cjenik_table">
+            <caption id="se">
+              Sendviči i pizze
+            </caption>
+            <tr>
+              <th>Proizvod</th>
+              <th>Cijena</th>
+            </tr>
+            <tr>
+              <td id="puretina">Sendvič s puretinom</td>
+              <td>2.6&euro;</td>
+            </tr>
+            <tr>
+              <td>Sendvič s pršutom</td>
+              <td>2.7&euro;</td>
+            </tr>
+            <tr>
+              <td>Sendvič šunka-sir</td>
+              <td>2.5&euro;</td>
+            </tr>
+            <tr>
+              <td>Sendvič tuna</td>
+              <td>2.6&euro;</td>
+            </tr>
+            <tr>
+              <td>Sendvič špek i vrhnje</td>
+              <td>1.7&euro;</td>
+            </tr>
+            <tr>
+              <td>Miješana pizza</td>
+              <td>1.8&euro;</td>
+            </tr>
+            <tr>
+              <td>Pizza s 4 vrste sira</td>
+              <td>1.9&euro;</td>
+            </tr>
+            <tr>
+              <td>Vege pizza</td>
+              <td>1.7&euro;</td>
+            </tr>
+            <tr>
+              <td>Pizza calzone</td>
+              <td>2.1&euro;</td>
+            </tr>
+          </table>
+          <table class="cjenik_table">
+            <caption id="tk">
+              Torte i kolači
+              <br />Napomena: torte i kolače morate unaprijed naručiti
+            </caption>
+
+            <tr>
+              <th>Proizvod</th>
+              <th>Cijena</th>
+            </tr>
+            <tr>
+              <td>Schwarzwald torta promjer 35/25/15cm</td>
+              <td>60/35/15&euro;</td>
+            </tr>
+            <tr>
+              <td>Cheesecake torta promjer 35/25/15cm</td>
+              <td>60/35/15&euro;</td>
+            </tr>
+            <tr>
+              <td id="cokoladna">Čokoladna torta promjer 35/25/15cm</td>
+              <td>55/30/12&euro;</td>
+            </tr>
+            <tr>
+              <td>Lješnjak torta promjer 35/25/15cm</td>
+              <td>55/30/12&euro;</td>
+            </tr>
+            <tr>
+              <td>Ledeni vjetar torta promjer 35/25/15cm</td>
+              <td>60/35/15&euro;</td>
+            </tr>
+            <tr>
+              <td>Sacher torta promjer 35/25/15cm</td>
+              <td>60/35/15&euro;</td>
+            </tr>
+            <tr>
+              <td>Voćna torta promjer 35/25/15cm</td>
+              <td>55/30/12&euro;</td>
+            </tr>
+            <tr>
+              <td>Kesten pire 1kg</td>
+              <td>20&euro;</td>
+            </tr>
+            <tr>
+              <td>Domaći kolači različiti 1kg</td>
+              <td>12&euro;</td>
+            </tr>
+          </table>
+          <table class="cjenik_table">
+            <caption id="op">
+              Ostali proizvodi
+            </caption>
+            <tr>
+              <th>Proizvod</th>
+              <th>Cijena</th>
+            </tr>
+            <tr>
+              <td id="burek_sir_v">Burek sir 300g</td>
+              <td>2&euro;</td>
+            </tr>
+            <tr>
+              <td>Burek meso 300g</td>
+              <td>2.1&euro;</td>
+            </tr>
+            <tr>
+              <td>Motani burek s sirom 150g</td>
+              <td>1.35&euro;</td>
+            </tr>
+            <tr>
+              <td>Pita s krumpirom 150g</td>
+              <td>1&euro;</td>
+            </tr>
+            <tr>
+              <td>Toast 500g</td>
+              <td>1.73&euro;</td>
+            </tr>
+            <tr>
+              <td>Dvopek 225g</td>
+              <td>2.06&euro;</td>
+            </tr>
+            <tr>
+              <td id="brasno">Pšenično brašno glatko 1kg</td>
+              <td>0.76&euro;</td>
+            </tr>
+            <tr>
+              <td>Krušne mrvice(prezle) 500g</td>
+              <td>1.45&euro;</td>
+            </tr>
+            <tr>
+              <td>Svježi kvasac(germa) 42g</td>
+              <td>0.64&euro;</td>
+            </tr>
+            <tr>
+              <td>Mlinci 250g</td>
+              <td>79c</td>
+            </tr>
+            <tr>
+              <td>Jamnica 1l</td>
+              <td>80c</td>
+            </tr>
+            <tr>
+              <td>Coca Cola 1l</td>
+              <td>1.4&euro;</td>
+            </tr>
+            <tr>
+              <td>Mlijeko 1l</td>
+              <td>1.2&euro;</td>
+            </tr>
+          </table>
+
+          <br /><br /><br />
+          <a href="#">Povratak na vrh stranice</a>
+        </div>
+      </main>
+      <footer class="footer grid2">
+        <aside class="srednji-stupac grid3">
+          <ul>
+            <li><p>ZLATNI KLAS</p></li>
+            <li><p>ZLATNI KLAS pekarski obrt d.o.o.</p></li>
+            <li><p>Trg Ban Josipa Jelačića 1</p></li>
+            <li><p>10000 Zagreb</p></li>
+          </ul>
+          <ul>
+            <li><p>KONTAKT</p></li>
+            <li><p>tel:01 987654321</p></li>
+            <li><p>email:info@zlatni-klas.hr</p></li>
+          </ul>
+          <ul>
+            <li><p>DODATNE INFORMACIJE:</p></li>
+            <li><p>Načini plaćanja</p></li>
+            <li><p>Reklamacije i prigovori</p></li>
+            <li><p>Pravila privatnosti</p></li>
+          </ul>
+        </aside>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+
+        <div class="container full-width">
+          <p>Pratite nas na društvenim mrežama:</p>
+          <span
+            ><a href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i></a
+          ></span>
+          <span
+            ><a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i></a
+          ></span>
+          <span
+            ><a href="https://www.youtube.com" target="_blank"
+              ><i class="fab fa-youtube"></i></a
+          ></span>
+          <span
+            ><a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i></a
+          ></span>
+        </div>
+        <p class="copyright full-width">
+          Ovaj web page je izrađen kao seminarski rad za program 'Web dizajner'
+          u učilištu Algebra | Designed by Mario Oreški | copyright &copy; 2023.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

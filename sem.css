@@ -1,0 +1,207 @@
+/* IMPORTIRANJE FONTOVA  fontovi Alice(serif),Courgette(cursive) i Open Sans(sans-serif)*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Courgette&family=Open+Sans:wght@300&display=swap');
+
+/* OSNOVNI ELEMENTI ***********************************************************************************/
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0;
+    background-color: #fff5c0;
+  color: #222222;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{font-family: "Courgette", cursive;}
+nav{font-family: "Alice", serif;}
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #858585;
+  padding: 4px;
+}
+
+.aspect-3-2 img {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+nav ul, aside ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 200%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.current{
+  text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+  }
+
+
+a:visited{
+    color: green !important;
+    }
+    
+a:hover{
+      color: gold !important;
+    }
+
+a:active{
+  color:purple !important
+}
+
+table,caption,td,th{
+    border: 2px solid black;
+}
+
+
+caption,td,th{font-size: 120%;
+  width: 100%;
+}
+
+caption{margin-top: 20px;
+  background-color: #fff5c0;
+}
+
+.cjenik{
+  background-image: url(slike/donuts.jpg);
+ /*  background-repeat: no-repeat;
+  background-position: 0px 63px ; */
+}
+
+.cjenik_izbornik{
+  margin-top: 2%;
+  margin-left: 10px;
+}
+.cjenik_table{
+  background-color: #fff5c0;
+}
+
+input,
+textarea
+{width: 95vw;
+padding: 10px;
+max-width: 600px;}
+
+
+/* PAGE LAYOUT ********************************************************************************************/
+/* GLAVNI GRID, DIJELI STRANICU NA 3 DIJELA*/
+.grid1{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+/* DRUGI GRID, STAVLJA PRAZNI PROSTOR SA STRANA SADRŽAJA TAKO DA JE SADRŽAJ ŠIROK DO 1200PX I U SREDINI */
+.grid2{
+    display:grid;
+    grid-template-columns: 1fr minmax(300px,1200px) 1fr;
+    gap: 10px;
+}
+/* TREĆI I ČETVRTI ZAJEDNIČKI GRID SLUŽE ZA MEDIA QUERIES*/
+.grid3{
+    display: grid;
+gap: 10px;
+}
+
+.grid4{display: grid;
+  text-align: left;
+  
+  }
+/* Elementi s ovim selektorom se nalaze u srednjem stupcu */
+.srednji-stupac {
+    grid-column: 2/3;
+}
+/* Elementi s ovim selektorom se protežu punom širinom stranice - to je za banner i footer*/
+.full-width {
+    grid-column: 1/4;
+}
+ /* Sadržaj elemenata s ovim selektorom se nalazi vertikalno u sredini */ 
+.vertikalno-sredina {
+    align-items: center;
+}
+
+
+
+
+/* HEADER **********************************************************************************************************/
+.header1{
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+  }
+  
+/* BANNER *********************************************************************************************************/
+.banner{
+    background:  url(slike/zitno-polje.jpg) center 55% / cover no-repeat;
+    height: 400px;
+    color: white;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding: 20px;
+}
+/* MAIN ***********************************************************************************************************/
+.page-title {
+  border-bottom: 1px solid goldenrod;
+  padding-bottom: 5px;
+}
+.poništi{background-color: rgb(255, 75, 75);}
+.potvrdi{background-color: green;}
+/* FOOTER *********************************************************************************************************/
+.footer {
+    background-color: #333333;
+    color: #eeeeee;
+    text-align: center;
+    grid-row: 4/5;
+  }
+  
+.footer a {
+    color: #eeeeee;
+  }
+  
+.copyright {
+    text-transform: uppercase;
+  }
+/* MEDIA QUERIES *********************************************************************************************/
+@media (min-width: 600px){
+    nav li{display: inline;}
+    .grid3 {grid-template-columns: repeat(2, 1fr);}
+    .navigacija {
+        justify-self: end;
+      }
+      .grid4{
+        grid-template-columns: repeat(2,1fr);
+      }
+}
+
+@media (min-width: 900px) {
+    .grid3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .navigacija {
+        grid-column: 2/4;
+      }
+      .navigacija li {
+        display: inline;
+        margin-left: 2em;
+      }
+}

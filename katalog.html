@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalog</title>
+    <link rel="stylesheet" href="sem.css" />
+  </head>
+  <!-- Na ovoj stranici se prikazuje nekoliko(najmanje 2)istaknuta proizvoda ili usluge koje nudi obrt. 
+  Uz svaki mora stojati kratak opis i bar jedna slika. Također mora sadržavati link prema cjeniku. -->
+  <body>
+    <!-- u div se nalazi sve, dajemo mu grid1 da razdjelimo sav sadržaj na 3 djela(header,main,footer)  -->
+    <div class="grid1">
+      <header class="grid2 header1">
+        <div class="grid3 srednji-stupac vertikalno-sredina">
+          <h1>Zlatni klas</h1>
+          <nav class="navigacija">
+            <ul class="nav-lista">
+              <li><a href="index.html">Naslovnica</a></li>
+              <li><a href="proizvodi_i_usluge.html">Proizvodi</a></li>
+              <li class="current"><a href="katalog.html">Katalog</a></li>
+              <li><a href="cjenik.html">Cjenik</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="grid2">
+      <article class="srednji-stupac">
+      <h2 class="page-title">Preporučeni proizvodi:</h2>
+      <div class="grid3 aspect-3-2">
+        <article>
+          <img
+            src="slike/img2.jpg"
+            alt="kruh"
+            width="640px"
+            height="360px"
+          />
+          <h3><a href="cjenik.html#domaci">Domaći kruh</a></h3>
+          <p>
+            Iako velika količina robe zahtijeva strojnu proizvodnju, kod nas
+            još uvijek možete kupiti i domaći kruh, ručno miješen i bez
+            ikakvih dodatnih aditiva. Kruh koji se sastoji samo od brašna,
+            vode, kvasca, soli… i vremena.
+          </p>
+        </article>
+        <article>
+          <img
+            src="slike/bezglutenski.jpeg"
+            alt="kruh"
+            width="640px"
+            height="360px"
+          />
+          <h3><a href="cjenik.html#bezglutenski">Kruh bez glutena</a></h3>
+          <p>
+            Ukoliko ne možete probaviti gluten ne brinite, u našoj pekari
+            možete kupiti i kruh bez glutena.
+          </p>
+        </article>
+      <article>
+        <img
+          src="slike/rodjendan.jpg"
+          alt="torta"
+          width="640px"
+          height="360px"
+        />
+        <h3><a href="cjenik.html#cokoladna">Čokoladna torta</a></h3>
+        <p>
+          Ukusna torta od najfinije čokolade je obavezna za svaki rođendan.
+        </p>
+      </article>
+      <article>
+        <img src="slike/kruh.jpg" alt="kruh" width="640px" height="360px" />
+        <h3><a href="cjenik.html#razeni">Raženi kruh</a></h3>
+        <p>
+          Izdašan kruh od raženog brašna, guste strukture i bogatog okusa! Nalik je kruhu naših baka.
+          Uživati ćete u svakom zalogaju.
+        </p>
+      </article>
+      <article>
+        <img src="slike/Krafne.jpg" alt="peciva" width="640px" height="360px" />
+        <h3><a href="cjenik.html#krafna_m">Krafna s marmeladom</a></h3>
+        <p>
+          Savršeno mekana krafna nadjevena sočnom marmeladom zasigurno će Vas oduševiti u svako doba dana! Vaš idealan slatki zalogaj za početak dana.
+        </p>
+      </article>
+      <article>
+        <img
+          src="slike/cupavci.jpg"
+          alt="kolaci"
+          width="640px"
+          height="360px"
+        />
+        <h3><a href="cjenik.html#cupavci">Kolači Čupavci</a></h3>
+        <p>
+          Čokoladno savršenstvo s mrvicama kokosa omiljena je slastica među svim generacijama! Ovaj mekani zalogaj s vremenom je postao dio tradicije svakog doma! Čupavce jednostavno morate voljeti!
+        </p>
+      </article>
+      <article>
+        <img src="slike/sendvic.jpg" alt="sendvic" width="640px" height="360px" />
+        <h3><a href="cjenik.html#puretina">Sendvič s puretinom</a></h3>
+        <p>
+          Ukusno i mekano pecivo punjeno purećom salamom, sirom, majonezom, rajčicom i svježom zelenom salatom osvojit će Vas pri prvom zalogaju!
+        </p>
+      </article>
+      <article>
+        <img src="slike/brasno.jpg" alt="brasno" width="640px" height="360px" />
+        <h3><a href="cjenik.html#brasno">Pšenično brašno</a></h3>
+        <p>
+          Ako želite sami ispeći vlastiti kruh ili kolače opskrbite se sa glatkim brašnom za najkvalitetniji proizvod.
+        </p>
+      </article>
+      <article>
+        <img
+          src="slike/burek.jpg"
+          alt="burek"
+          width="640px"
+          height="360px"
+        />
+        <h3><a href="cjenik.html#burek_sir_v">Burek sa sirom</a></h3>
+        <p>
+          Najpopularniji doručak, naš burek sa sirom će Vas zasititi i oduševiti okusom.
+        </p>
+      </article>
+        </div>
+      </article>
+    </article>
+    </main>
+    <footer class="footer grid2">
+      <aside class="srednji-stupac grid3">
+        <ul>
+          <li><p>ZLATNI KLAS</p></li>
+          <li><p>ZLATNI KLAS pekarski obrt d.o.o.</p></li>
+          <li><p>Trg Ban Josipa Jelačića 1</p></li>
+          <li><p>10000 Zagreb</p></li>
+        </ul>
+        <ul>
+          <li><p>KONTAKT</p></li>
+          <li><p>tel:01 987654321</p></li>
+          <li><p>email:info@zlatni-klas.hr</p></li>
+        </ul>
+        <ul>
+          <li><p>DODATNE INFORMACIJE:</p></li>
+            <li><p>Načini plaćanja</p></li>
+            <li><p>Reklamacije i prigovori</p></li>
+            <li><p>Pravila privatnosti</p></li>
+        </ul>
+      </aside>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+
+      <div class="container full-width">
+        <p>Pratite nas na društvenim mrežama:</p>
+        <span
+          ><a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i></a
+        ></span>
+        <span
+          ><a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i></a
+        ></span>
+        <span
+          ><a href="https://www.youtube.com" target="_blank"
+            ><i class="fab fa-youtube"></i></a
+        ></span>
+        <span
+          ><a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i></a
+        ></span>
+      </div>
+      <p class="copyright full-width">
+        Ovaj web page je izrađen kao seminarski rad za program 'Web dizajner'
+        u učilištu Algebra | Designed by Mario Oreški | copyright &copy; 2023.
+      </p>
+    </footer>
+  </div>
+  </body>
+</html>

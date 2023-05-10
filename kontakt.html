@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="sem.css" />
+  </head>
+  <!-- Na ovoj stranici korisnik ispunjava obrazac koji se šalje na adresu webmastera.
+       Obrazac MORA sadržavati: Ime,adresu,e-mail,polje za komentar i pošalji/poništi gumbe.
+  -->
+  <body>
+    <!-- u div se nalazi sve, dajemo mu grid1 da razdjelimo sav sadržaj na 3 djela(header,main,footer)  -->
+    <div class="grid1">
+      <header class="grid2 header1">
+        <div class="grid3 srednji-stupac vertikalno-sredina">
+          <h1>Zlatni klas</h1>
+          <nav class="navigacija">
+            <ul class="nav-lista">
+              <li><a href="index.html">Naslovnica</a></li>
+              <li><a href="proizvodi_i_usluge.html">Proizvodi</a></li>
+              <li><a href="katalog.html">Katalog</a></li>
+              <li><a href="cjenik.html">Cjenik</a></li>
+              <li class="current"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="grid2">
+        <div class="srednji-stupac">
+          <div class="grid4">
+            <div>
+              <p>Pekara Zlatni Klas</p>
+
+              <p>
+                Adresa:
+                <a href="https://goo.gl/maps/hFQPjiKvLocY84X38" target="_blank"
+                  >Trg Bana Josipa Jelačića 1</a
+                >
+              </p>
+              <p>
+                Kontakt telefon:
+                <a href="tel:+385-01-987654321">01 987654321</a>
+              </p>
+              <p>
+                E-mail:
+                <a href="mailto:mariooreski@yahoo.com">mariooreski@yahoo.com</a>
+              </p>
+              <p>
+                Radno vrijeme: <br />otvoreni smo svaki dan od 6 do 22 sata,
+                nedjeljom od 6 do 14
+              </p>
+            </div>
+            <form
+              action=""
+              name="obrazac1"
+              method="post"
+              enctype="multipart/form-data"
+              autocomplete="off"
+            >
+              <p>
+                <input
+                  type="text"
+                  id="ime"
+                  placeholder="Ime i prezime"
+                  required
+                />
+              </p>
+              <p>
+                <input type="text" id="adresa" placeholder="Adresa" required />
+              </p>
+              <p>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Unesite vaš e-mail"
+                  required
+                />
+              </p>
+              <p>
+                <label for="kategorija"
+                  >Odaberite kategoriju vašeg pitanja</label
+                >
+                <select name="kategorija" id="kategorija">
+                  <option value="reklamacije">reklamacije</option>
+                  <option value="upiti-proizvodi">upiti-proizvodi</option>
+                  <option value="prijava-posao">prijava-posao</option>
+                  <option value="nabava">nabava</option>
+                </select>
+              </p>
+              <p>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  placeholder="Unesite vaše pitanje o usluzi ili proizvodu koji vas zanima"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </p>
+              <p>
+                <input type="checkbox" name="obavijesti" id="obavijesti" />
+                <label for="obavijesti"
+                  >Želim primati obavijesti o novim proizvodima i uslugama iz
+                  ponude</label
+                >
+              </p>
+              <p>
+                <input
+                  class="poništi"
+                  type="reset"
+                  name="reset-btn"
+                  value="Poništite obrazac"
+                />
+                <input
+                  class="potvrdi"
+                  type="submit"
+                  name="submit-btn"
+                  value="Pošaljite obrazac"
+                />
+              </p>
+              <p>
+                *Vaše osobne podatke iz gornjeg obrasca prikupljamo i obrađujemo
+                samo kako bismo vam mogli odgovoriti, odnosno obraditi Vaš upit.
+                Obrada Vaših osobnih podataka vrši se na povjerljiv način i
+                isključivo u sukladnosti sa zakonskim odredbama.Vaše podatke
+                nećemo dijeliti sa drugim osobama ili tvrtkama.
+              </p>
+              <br /><br /><br />
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer grid2">
+        <aside class="srednji-stupac grid3">
+          <ul>
+            <li><p>ZLATNI KLAS</p></li>
+            <li><p>ZLATNI KLAS pekarski obrt d.o.o.</p></li>
+            <li><p>Trg Ban Josipa Jelačića 1</p></li>
+            <li><p>10000 Zagreb</p></li>
+          </ul>
+          <ul>
+            <li><p>KONTAKT</p></li>
+            <li><p>tel:01 987654321</p></li>
+            <li><p>email:info@zlatni-klas.hr</p></li>
+          </ul>
+          <ul>
+            <li><p>DODATNE INFORMACIJE:</p></li>
+            <li><p>Načini plaćanja</p></li>
+            <li><p>Reklamacije i prigovori</p></li>
+            <li><p>Pravila privatnosti</p></li>
+          </ul>
+        </aside>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+
+        <div class="container full-width">
+          <p>Pratite nas na društvenim mrežama:</p>
+          <span
+            ><a href="https://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i></a
+          ></span>
+          <span
+            ><a href="https://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i></a
+          ></span>
+          <span
+            ><a href="https://www.youtube.com" target="_blank"
+              ><i class="fab fa-youtube"></i></a
+          ></span>
+          <span
+            ><a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i></a
+          ></span>
+        </div>
+        <p class="copyright full-width">
+          Ovaj web page je izrađen kao seminarski rad za program 'Web dizajner'
+          u učilištu Algebra | Designed by Mario Oreški | copyright &copy; 2023.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
